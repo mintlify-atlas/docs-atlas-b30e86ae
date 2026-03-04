@@ -1,0 +1,288 @@
+{
+  "projectType": "saas",
+  "projectName": "Ente",
+  "projectDescription": "End-to-end encrypted cloud platform for photos, authenticators, and secure document storage.",
+  "theme": "almond",
+  "primaryColor": "#0cc124",
+  "lightColor": "#1c1f1d",
+  "darkColor": "#c3c3c3",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "products/photos",
+              "products/auth",
+              "products/locker"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/encryption",
+              "concepts/sharing",
+              "concepts/privacy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Ente Photos",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "photos/installation",
+              "photos/quickstart",
+              "photos/importing"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "photos/features/albums",
+              "photos/features/sharing",
+              "photos/features/face-detection",
+              "photos/features/semantic-search",
+              "photos/features/family-plans"
+            ]
+          },
+          {
+            "group": "Platform Guides",
+            "pages": [
+              "photos/platforms/mobile",
+              "photos/platforms/web",
+              "photos/platforms/desktop"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Ente Auth",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "auth/installation",
+              "auth/quickstart",
+              "auth/features"
+            ]
+          },
+          {
+            "group": "Migration",
+            "pages": [
+              "auth/migration/import",
+              "auth/migration/export",
+              "auth/migration/authy"
+            ]
+          },
+          {
+            "group": "Platform Guides",
+            "pages": [
+              "auth/platforms/mobile",
+              "auth/platforms/web",
+              "auth/platforms/desktop"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Ente Locker",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "locker/installation",
+              "locker/quickstart",
+              "locker/features"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "locker/documents",
+              "locker/credentials",
+              "locker/emergency-access"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Self-Hosting",
+        "groups": [
+          {
+            "group": "Server Setup",
+            "pages": [
+              "self-hosting/overview",
+              "self-hosting/quickstart",
+              "self-hosting/docker",
+              "self-hosting/configuration"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "self-hosting/operations/deployment",
+              "self-hosting/operations/maintenance",
+              "self-hosting/operations/backup",
+              "self-hosting/operations/monitoring"
+            ]
+          },
+          {
+            "group": "Client Configuration",
+            "pages": [
+              "self-hosting/clients/mobile",
+              "self-hosting/clients/web",
+              "self-hosting/clients/desktop"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Tool",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "cli/installation",
+              "cli/quickstart"
+            ]
+          },
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/commands/account",
+              "cli/commands/export",
+              "cli/commands/auth"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "cli/configuration",
+              "cli/automation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "development/setup",
+              "development/architecture",
+              "development/contributing"
+            ]
+          },
+          {
+            "group": "Mobile Development",
+            "pages": [
+              "development/mobile/setup",
+              "development/mobile/building",
+              "development/mobile/testing"
+            ]
+          },
+          {
+            "group": "Web Development",
+            "pages": [
+              "development/web/setup",
+              "development/web/building",
+              "development/web/structure"
+            ]
+          },
+          {
+            "group": "Server Development",
+            "pages": [
+              "development/server/setup",
+              "development/server/api",
+              "development/server/database"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/authentication/overview",
+              "api/authentication/login",
+              "api/authentication/tokens"
+            ]
+          },
+          {
+            "group": "Files",
+            "pages": [
+              "api/files/upload",
+              "api/files/download",
+              "api/files/metadata"
+            ]
+          },
+          {
+            "group": "Collections",
+            "pages": [
+              "api/collections/create",
+              "api/collections/share",
+              "api/collections/manage"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "api/billing/plans",
+              "api/billing/subscriptions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "End-to-end encrypted photo storage with face detection and semantic search",
+    "2FA authenticator with cloud backup and multi-device sync",
+    "Secure document locker with emergency access",
+    "Private album sharing with collaborative features",
+    "Self-hostable server with Docker support",
+    "Cross-platform clients (iOS, Android, Web, Desktop)",
+    "CLI tool for automated backups and exports",
+    "Family plans with shared storage",
+    "Open source and externally audited cryptography"
+  ],
+  "publicApiSurface": [
+    "POST /users/ott - Request one-time token for authentication",
+    "POST /users/verify-email - Verify email with OTT",
+    "GET /users - Get current user details",
+    "POST /files - Upload encrypted files",
+    "GET /files/download - Download encrypted files",
+    "POST /collections - Create collection (album/folder)",
+    "POST /collections/share - Share collection with users",
+    "GET /collections/diff - Sync collection changes",
+    "POST /authenticator/entity - Add 2FA entity",
+    "GET /authenticator/entity/diff - Sync 2FA changes",
+    "GET /billing/plans - Get subscription plans",
+    "POST /billing/subscription - Create subscription",
+    "POST /family/invite - Invite family members",
+    "POST /cast/register-device - Register casting device",
+    "POST /public-collection/create - Create public share link",
+    "Mobile App: Ente Photos (Flutter) - io.ente.photos",
+    "Mobile App: Ente Auth (Flutter) - io.ente.auth",
+    "Mobile App: Ente Locker (Flutter) - io.ente.locker",
+    "Desktop App: Electron-based (Windows, macOS, Linux)",
+    "Web Apps: photos, auth, accounts, cast, payments",
+    "CLI: ente account, ente export, ente auth-decrypt"
+  ]
+}
